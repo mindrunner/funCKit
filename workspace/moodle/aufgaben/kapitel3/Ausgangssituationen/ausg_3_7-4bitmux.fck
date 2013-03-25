@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuits xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0" xmlns:fck="http://git.sep2011.de/funckit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fck:projectname="4-Bit-Mux" main="funCKitCircuit" xsi:schemaLocation="     http://git.sep2011.de/funckit    http://git.sep2011.de/funckit.xsd">
+  <circuit name="funCKitCircuit">
+    <component fck:delay="0" fck:height="40" fck:name="1-Bit-MUX" fck:orientation="WEST" fck:width="40" name="c2d83c82-685f-4d07-ad03-0d662e62b84e" posx="180" posy="100" type="circuit" type2="d89ba0fd-c0fa-4853-b43c-26f5ae427e2a">
+      <fck:accesspoint fck:id="98009183-f9b1-425b-8629-6e01f8c0eed5" fck:name="E0" fck:posx="0" fck:posy="11" fck:type="input"/>
+      <fck:accesspoint fck:id="d4200fa9-e20a-4b04-b22a-a499576dc2fc" fck:name="E1" fck:posx="0" fck:posy="20" fck:type="input"/>
+      <fck:accesspoint fck:id="b346e55b-c720-48b4-9cb2-690f4e315345" fck:name="S0" fck:posx="0" fck:posy="29" fck:type="input"/>
+      <fck:accesspoint fck:id="f9a901c6-4327-4a7b-a276-444db53d7b4d" fck:name="A" fck:posx="40" fck:posy="20" fck:type="output"/>
+      <fck:mapping fck:innerPoint="c3dd7e66-35c1-45db-a7e3-e985dfe644e7" fck:outerPoint="98009183-f9b1-425b-8629-6e01f8c0eed5"/>
+      <fck:mapping fck:innerPoint="d62706fe-a2f1-4344-9956-8e23605454bc" fck:outerPoint="d4200fa9-e20a-4b04-b22a-a499576dc2fc"/>
+      <fck:mapping fck:innerPoint="63b7d899-bbf5-4268-b0b2-bc7279ae6949" fck:outerPoint="b346e55b-c720-48b4-9cb2-690f4e315345"/>
+      <fck:mapping fck:innerPoint="d3e59770-a572-4095-b02e-1390144751c7" fck:outerPoint="f9a901c6-4327-4a7b-a276-444db53d7b4d"/>
+    </component>
+    <component fck:delay="0" fck:height="40" fck:name="1-Bit-MUX" fck:orientation="WEST" fck:width="40" name="bea26905-aaa8-4723-8a2e-6e8caeb847c8" posx="180" posy="160" type="circuit" type2="d89ba0fd-c0fa-4853-b43c-26f5ae427e2a">
+      <fck:accesspoint fck:id="3e74833c-2277-42a3-abff-393316c794ed" fck:name="E0" fck:posx="0" fck:posy="11" fck:type="input"/>
+      <fck:accesspoint fck:id="6e6eac21-2d82-4417-a872-582a62fa3ec5" fck:name="E1" fck:posx="0" fck:posy="20" fck:type="input"/>
+      <fck:accesspoint fck:id="e77bc6bd-509b-42d9-8624-cbd8cbe8b21a" fck:name="S0" fck:posx="0" fck:posy="29" fck:type="input"/>
+      <fck:accesspoint fck:id="2ad49bfd-a142-463e-b8b0-848e3d4b92d8" fck:name="A" fck:posx="40" fck:posy="20" fck:type="output"/>
+      <fck:mapping fck:innerPoint="c3dd7e66-35c1-45db-a7e3-e985dfe644e7" fck:outerPoint="3e74833c-2277-42a3-abff-393316c794ed"/>
+      <fck:mapping fck:innerPoint="d62706fe-a2f1-4344-9956-8e23605454bc" fck:outerPoint="6e6eac21-2d82-4417-a872-582a62fa3ec5"/>
+      <fck:mapping fck:innerPoint="63b7d899-bbf5-4268-b0b2-bc7279ae6949" fck:outerPoint="e77bc6bd-509b-42d9-8624-cbd8cbe8b21a"/>
+      <fck:mapping fck:innerPoint="d3e59770-a572-4095-b02e-1390144751c7" fck:outerPoint="2ad49bfd-a142-463e-b8b0-848e3d4b92d8"/>
+    </component>
+    <component fck:delay="0" fck:height="40" fck:name="1-Bit-MUX" fck:orientation="WEST" fck:width="40" name="55e0c2c1-39f6-4000-bcfb-109b61998b7d" posx="180" posy="220" type="circuit" type2="d89ba0fd-c0fa-4853-b43c-26f5ae427e2a">
+      <fck:accesspoint fck:id="d667a1ff-d7c9-4430-9909-1a829ef6ede1" fck:name="E0" fck:posx="0" fck:posy="11" fck:type="input"/>
+      <fck:accesspoint fck:id="f1433ce4-2f14-49de-8825-0c1cd2f5b66e" fck:name="E1" fck:posx="0" fck:posy="20" fck:type="input"/>
+      <fck:accesspoint fck:id="c06de014-1e17-4df5-b8e2-118ae755a923" fck:name="S0" fck:posx="0" fck:posy="29" fck:type="input"/>
+      <fck:accesspoint fck:id="f99a4983-bdea-4706-b0cf-5b97ff828a65" fck:name="A" fck:posx="40" fck:posy="20" fck:type="output"/>
+      <fck:mapping fck:innerPoint="c3dd7e66-35c1-45db-a7e3-e985dfe644e7" fck:outerPoint="d667a1ff-d7c9-4430-9909-1a829ef6ede1"/>
+      <fck:mapping fck:innerPoint="d62706fe-a2f1-4344-9956-8e23605454bc" fck:outerPoint="f1433ce4-2f14-49de-8825-0c1cd2f5b66e"/>
+      <fck:mapping fck:innerPoint="63b7d899-bbf5-4268-b0b2-bc7279ae6949" fck:outerPoint="c06de014-1e17-4df5-b8e2-118ae755a923"/>
+      <fck:mapping fck:innerPoint="d3e59770-a572-4095-b02e-1390144751c7" fck:outerPoint="f99a4983-bdea-4706-b0cf-5b97ff828a65"/>
+    </component>
+    <component fck:delay="0" fck:height="40" fck:name="1-Bit-MUX" fck:orientation="WEST" fck:width="40" name="0e0a9ab6-8173-4b0d-80ed-552d8c03e95c" posx="180" posy="280" type="circuit" type2="d89ba0fd-c0fa-4853-b43c-26f5ae427e2a">
+      <fck:accesspoint fck:id="e70a5639-e1f3-4515-b401-dc7f5912814d" fck:name="E0" fck:posx="0" fck:posy="11" fck:type="input"/>
+      <fck:accesspoint fck:id="b076bd89-8837-4b64-8f0b-9fa2bca5d3d5" fck:name="E1" fck:posx="0" fck:posy="20" fck:type="input"/>
+      <fck:accesspoint fck:id="8c142f9d-3e00-4da7-984f-0e26010e7328" fck:name="S0" fck:posx="0" fck:posy="29" fck:type="input"/>
+      <fck:accesspoint fck:id="db159265-3ccc-4595-bca7-338ab5109ef4" fck:name="A" fck:posx="40" fck:posy="20" fck:type="output"/>
+      <fck:mapping fck:innerPoint="c3dd7e66-35c1-45db-a7e3-e985dfe644e7" fck:outerPoint="e70a5639-e1f3-4515-b401-dc7f5912814d"/>
+      <fck:mapping fck:innerPoint="d62706fe-a2f1-4344-9956-8e23605454bc" fck:outerPoint="b076bd89-8837-4b64-8f0b-9fa2bca5d3d5"/>
+      <fck:mapping fck:innerPoint="63b7d899-bbf5-4268-b0b2-bc7279ae6949" fck:outerPoint="8c142f9d-3e00-4da7-984f-0e26010e7328"/>
+      <fck:mapping fck:innerPoint="d3e59770-a572-4095-b02e-1390144751c7" fck:outerPoint="db159265-3ccc-4595-bca7-338ab5109ef4"/>
+    </component>
+    <component fck:height="40" fck:name="a1" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="a1e563fb-fbbe-4409-8860-8e3bc0218276" posx="80" posy="100" type="in">
+      <fck:accesspoint fck:id="0846dcb4-f0e4-41eb-a55c-b734b94bda6f" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="b1" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="4d70af57-a891-47b7-aff5-b297e06e83b4" posx="80" posy="160" type="in">
+      <fck:accesspoint fck:id="9f223e1f-e3ad-4e75-914c-983e21865b70" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="a2" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="7b8709fe-f7f2-4c17-81a4-1d5b638a13a9" posx="80" posy="220" type="in">
+      <fck:accesspoint fck:id="bc61c217-c9f9-4331-b398-d29646afac6f" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="b2" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="ade0bc50-dcd8-442f-b2c5-0e468862e1ba" posx="80" posy="280" type="in">
+      <fck:accesspoint fck:id="bd88f31b-6f0c-4c4d-b604-c00f7113d5d4" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="b0" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="9403cfbc-f017-481c-acfa-4bf53d6e8088" posx="80" posy="40" type="in">
+      <fck:accesspoint fck:id="2a1f0416-412d-4e94-bcde-0ec7f8315430" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="a3" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="ca2345f7-48e9-4489-b45e-bf4e19252973" posx="80" posy="340" type="in">
+      <fck:accesspoint fck:id="e506874e-13e4-47d6-944a-85f9114e46b6" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="b3" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="9a3cf8ed-f19b-4ccc-ae5f-b21ff2923ea5" posx="80" posy="400" type="in">
+      <fck:accesspoint fck:id="5bfa0d45-da81-41a4-8fa0-e3630cd271d9" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="a0" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="0be2a95a-7285-4584-9958-3d8320087bf1" posx="80" posy="-20" type="in">
+      <fck:accesspoint fck:id="19cbc112-1e21-449b-928f-13a7cdb6dedc" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="S" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="f315a958-4c9f-4d7c-8f81-2d1bc70dd918" posx="80" posy="500" type="in">
+      <fck:accesspoint fck:id="0c2b03bd-ccdd-47f9-b01a-2d86a265fadf" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="o0" fck:orientation="WEST" fck:type="light" fck:width="40" name="015d314b-1797-457b-b1cc-3a9b2a47a35e" posx="380" posy="100" type="out">
+      <fck:accesspoint fck:id="80b6ace5-6597-41fb-be72-7625d2cddcfc" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+    <component fck:height="40" fck:name="o1" fck:orientation="WEST" fck:type="light" fck:width="40" name="623ccfec-911c-4a85-b251-d3b51910089b" posx="380" posy="160" type="out">
+      <fck:accesspoint fck:id="f37867b4-c77c-4cec-a8b3-e1ae648df736" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+    <component fck:height="40" fck:name="o2" fck:orientation="WEST" fck:type="light" fck:width="40" name="7c98eef3-94bc-4750-8cd5-5589ea5053f4" posx="380" posy="220" type="out">
+      <fck:accesspoint fck:id="3d274e1b-701f-4abd-ab3e-b6ea8ede7699" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+    <component fck:height="40" fck:name="o3" fck:orientation="WEST" fck:type="light" fck:width="40" name="c411d828-064c-4b9c-a367-5bd791cce75b" posx="380" posy="280" type="out">
+      <fck:accesspoint fck:id="871cb076-3c94-4441-8b61-05c1f79e0583" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+  </circuit>
+  <circuit fck:height="40" fck:name="1-Bit-MUX" fck:orientation="WEST" fck:type="component" fck:width="40" name="d89ba0fd-c0fa-4853-b43c-26f5ae427e2a">
+    <component fck:componentTypePoint="true" fck:name="E0" fck:posx="0" fck:posy="11" name="c3dd7e66-35c1-45db-a7e3-e985dfe644e7" posx="381" posy="280" type="in"/>
+    <component fck:componentTypePoint="true" fck:name="E1" fck:posx="0" fck:posy="20" name="d62706fe-a2f1-4344-9956-8e23605454bc" posx="382" posy="280" type="in"/>
+    <component fck:componentTypePoint="true" fck:name="S0" fck:posx="0" fck:posy="29" name="63b7d899-bbf5-4268-b0b2-bc7279ae6949" posx="383" posy="280" type="in"/>
+    <component fck:componentTypePoint="true" fck:name="A" fck:posx="40" fck:posy="20" name="d3e59770-a572-4095-b02e-1390144751c7" posx="384" posy="280" type="out"/>
+    <component fck:delay="0" fck:height="40" fck:name="And" fck:orientation="WEST" fck:width="40" name="a2e3525f-f5e1-4ad1-9f22-5ed77361bd72" posx="280" posy="160" type="and">
+      <fck:accesspoint fck:id="29156d92-6193-454d-b6fe-4122e504fd53" fck:name="a" fck:posx="0" fck:posy="10" fck:type="input"/>
+      <fck:accesspoint fck:id="5a1e3b76-5007-4619-b905-747326acb6d8" fck:name="b" fck:posx="0" fck:posy="30" fck:type="input"/>
+      <fck:accesspoint fck:id="a629f6f5-4209-41b7-908e-28695c759c88" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:delay="0" fck:height="40" fck:name="And" fck:orientation="WEST" fck:width="40" name="8bb6fddc-ae6f-4790-a0ee-07e24a6deaa8" posx="280" posy="240" type="and">
+      <fck:accesspoint fck:id="7b541fe7-6eee-49c1-8fde-1369fa5afc22" fck:name="a" fck:posx="0" fck:posy="10" fck:type="input"/>
+      <fck:accesspoint fck:id="c18a8f9c-d832-4178-a7a5-475f9854d76c" fck:name="b" fck:posx="0" fck:posy="30" fck:type="input"/>
+      <fck:accesspoint fck:id="ae90ae7e-36e4-49f2-bb6e-50e62abc864a" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:delay="0" fck:height="40" fck:name="Or" fck:orientation="WEST" fck:width="40" name="12ab60c5-53e1-45f9-ab6d-313609cac73b" posx="360" posy="200" type="or">
+      <fck:accesspoint fck:id="7b1ca7e8-899c-4a5d-8e1a-7da7e20832de" fck:name="a" fck:posx="0" fck:posy="10" fck:type="input"/>
+      <fck:accesspoint fck:id="751456d7-45cd-4b38-8e6b-8771c10905ba" fck:name="b" fck:posx="0" fck:posy="30" fck:type="input"/>
+      <fck:accesspoint fck:id="1e878d53-e0c0-4543-b813-fad9661b9be0" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:delay="0" fck:height="40" fck:name="Not" fck:orientation="WEST" fck:width="40" name="43f6ff2e-5fa6-4dfa-905a-c3ad0910f488" posx="220" posy="160" type="not">
+      <fck:accesspoint fck:id="a9d2ee92-e7d0-447c-9ff7-f7deedda6ef9" fck:name="a" fck:posx="0" fck:posy="20" fck:type="input"/>
+      <fck:accesspoint fck:id="ece23756-6a72-48a9-b61e-624e3ce6081c" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:delay="0" fck:height="4" fck:name="E0" fck:orientation="WEST" fck:type="idpoint" fck:width="4" name="9dc6699b-340b-4b60-af07-9581b0608940" posx="160" posy="120" type="id">
+      <fck:accesspoint fck:id="c3dd7e66-35c1-45db-a7e3-e985dfe644e7" fck:name="a" fck:posx="2" fck:posy="2" fck:type="input"/>
+      <fck:accesspoint fck:id="6f536bc2-1d54-4395-9edd-b55fb7de9d20" fck:name="o" fck:posx="2" fck:posy="2" fck:type="output"/>
+    </component>
+    <component fck:delay="0" fck:height="4" fck:name="E1" fck:orientation="WEST" fck:type="idpoint" fck:width="4" name="1e793a9a-7349-4cf6-890b-35ad0cde5180" posx="160" posy="200" type="id">
+      <fck:accesspoint fck:id="d62706fe-a2f1-4344-9956-8e23605454bc" fck:name="a" fck:posx="2" fck:posy="2" fck:type="input"/>
+      <fck:accesspoint fck:id="6df2b8a9-f933-4b63-ba98-7ffa6b1d4e08" fck:name="o" fck:posx="2" fck:posy="2" fck:type="output"/>
+    </component>
+    <component fck:delay="0" fck:height="4" fck:name="S0" fck:orientation="WEST" fck:type="idpoint" fck:width="4" name="05f4e7c9-1167-43cb-b061-927ed2dfddc0" posx="160" posy="280" type="id">
+      <fck:accesspoint fck:id="63b7d899-bbf5-4268-b0b2-bc7279ae6949" fck:name="a" fck:posx="2" fck:posy="2" fck:type="input"/>
+      <fck:accesspoint fck:id="dfbb0631-d247-493d-bddb-1282969184f0" fck:name="o" fck:posx="2" fck:posy="2" fck:type="output"/>
+    </component>
+    <component fck:delay="0" fck:height="4" fck:name="A" fck:orientation="WEST" fck:type="idpoint" fck:width="4" name="4745d30c-b2f3-410e-bb66-65c1f21ec321" posx="440" posy="200" type="id">
+      <fck:accesspoint fck:id="0e3a5af2-291b-44e2-b13c-bb152a7af767" fck:name="a" fck:posx="2" fck:posy="2" fck:type="input"/>
+      <fck:accesspoint fck:id="d3e59770-a572-4095-b02e-1390144751c7" fck:name="o" fck:posx="2" fck:posy="2" fck:type="output"/>
+    </component>
+    <connection fck:name="" fck:source="1e878d53-e0c0-4543-b813-fad9661b9be0" fck:target="0e3a5af2-291b-44e2-b13c-bb152a7af767" source="12ab60c5-53e1-45f9-ab6d-313609cac73b" sourcePort="o" target="4745d30c-b2f3-410e-bb66-65c1f21ec321" targetPort="a"/>
+    <connection fck:name="" fck:source="a629f6f5-4209-41b7-908e-28695c759c88" fck:target="7b1ca7e8-899c-4a5d-8e1a-7da7e20832de" source="a2e3525f-f5e1-4ad1-9f22-5ed77361bd72" sourcePort="o" target="12ab60c5-53e1-45f9-ab6d-313609cac73b" targetPort="a"/>
+    <connection fck:name="" fck:source="ae90ae7e-36e4-49f2-bb6e-50e62abc864a" fck:target="751456d7-45cd-4b38-8e6b-8771c10905ba" source="8bb6fddc-ae6f-4790-a0ee-07e24a6deaa8" sourcePort="o" target="12ab60c5-53e1-45f9-ab6d-313609cac73b" targetPort="b"/>
+    <connection fck:name="" fck:source="ece23756-6a72-48a9-b61e-624e3ce6081c" fck:target="5a1e3b76-5007-4619-b905-747326acb6d8" source="43f6ff2e-5fa6-4dfa-905a-c3ad0910f488" sourcePort="o" target="a2e3525f-f5e1-4ad1-9f22-5ed77361bd72" targetPort="b"/>
+    <connection fck:name="" fck:source="dfbb0631-d247-493d-bddb-1282969184f0" fck:target="a9d2ee92-e7d0-447c-9ff7-f7deedda6ef9" source="05f4e7c9-1167-43cb-b061-927ed2dfddc0" sourcePort="o" target="43f6ff2e-5fa6-4dfa-905a-c3ad0910f488" targetPort="a"/>
+    <connection fck:name="" fck:source="dfbb0631-d247-493d-bddb-1282969184f0" fck:target="c18a8f9c-d832-4178-a7a5-475f9854d76c" source="05f4e7c9-1167-43cb-b061-927ed2dfddc0" sourcePort="o" target="8bb6fddc-ae6f-4790-a0ee-07e24a6deaa8" targetPort="b"/>
+    <connection fck:name="" fck:source="6df2b8a9-f933-4b63-ba98-7ffa6b1d4e08" fck:target="7b541fe7-6eee-49c1-8fde-1369fa5afc22" source="1e793a9a-7349-4cf6-890b-35ad0cde5180" sourcePort="o" target="8bb6fddc-ae6f-4790-a0ee-07e24a6deaa8" targetPort="a"/>
+    <connection fck:name="" fck:source="6f536bc2-1d54-4395-9edd-b55fb7de9d20" fck:target="29156d92-6193-454d-b6fe-4122e504fd53" source="9dc6699b-340b-4b60-af07-9581b0608940" sourcePort="o" target="a2e3525f-f5e1-4ad1-9f22-5ed77361bd72" targetPort="a"/>
+    <connection fck:ignore="true" source="c3dd7e66-35c1-45db-a7e3-e985dfe644e7" sourcePort="o" target="9dc6699b-340b-4b60-af07-9581b0608940" targetPort="a"/>
+    <connection fck:ignore="true" source="d62706fe-a2f1-4344-9956-8e23605454bc" sourcePort="o" target="1e793a9a-7349-4cf6-890b-35ad0cde5180" targetPort="a"/>
+    <connection fck:ignore="true" source="63b7d899-bbf5-4268-b0b2-bc7279ae6949" sourcePort="o" target="05f4e7c9-1167-43cb-b061-927ed2dfddc0" targetPort="a"/>
+    <connection fck:ignore="true" source="4745d30c-b2f3-410e-bb66-65c1f21ec321" sourcePort="o" target="d3e59770-a572-4095-b02e-1390144751c7" targetPort="a"/>
+  </circuit>
+</circuits>

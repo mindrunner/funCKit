@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuits xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0" xmlns:fck="http://git.sep2011.de/funckit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fck:projectname="halfadder" main="funCKitCircuit" xsi:schemaLocation="     http://git.sep2011.de/funckit    http://git.sep2011.de/funckit.xsd">
+  <circuit name="funCKitCircuit">
+    <component fck:height="40" fck:name="x" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="cd4005f8-d01a-4245-a5bd-681599cd24b2" posx="100" posy="80" type="in">
+      <fck:accesspoint fck:id="18b02720-c584-4135-8eec-ebb78d7f0e9b" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="y" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="77744a9f-0b24-48da-addf-dd483670a3ee" posx="100" posy="140" type="in">
+      <fck:accesspoint fck:id="40e716bf-d184-4377-a21d-b43f1752801c" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="s" fck:orientation="WEST" fck:type="light" fck:width="40" name="c9c3d3ce-bc7a-4581-bde2-5fadd150b94d" posx="560" posy="80" type="out">
+      <fck:accesspoint fck:id="6edd76a2-a4bc-44f7-a015-1f67a62d8fab" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+    <component fck:height="40" fck:name="c" fck:orientation="WEST" fck:type="light" fck:width="40" name="967d6030-9111-4a87-b994-1eed272b0c79" posx="560" posy="140" type="out">
+      <fck:accesspoint fck:id="c060912f-e25e-4e59-9a3c-9d0dd4fd4534" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+  </circuit>
+</circuits>

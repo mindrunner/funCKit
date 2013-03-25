@@ -1,0 +1,33 @@
+<circuits main="OR Gate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0"
+  xmlns:ext="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example"
+  xsi:schemaLocation="
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0.xsd
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example.xsd">
+<circuit name="OR Gate">
+<component name="SWITCH_2" posx="648" posy="511" type="in"/>
+<component name="SWITCH_3" posx="648" posy="567" type="in"/>
+<component name="LAMP_0" posx="840" posy="540" type="out"/>
+<component name="NAND Gate_0" posx="772" posy="540" type="circuit" type2="NAND Gate"/>
+<component name="NOT Gate_0" posx="712" posy="511" type="not"/>
+<component name="NOT Gate_1" posx="713" posy="567" type="not"/>
+<connection source="NAND Gate_0" sourcePort="a" target="NOT Gate_0" targetPort="o"/>
+<connection source="NAND Gate_0" sourcePort="b" target="NOT Gate_1" targetPort="o"/>
+<connection source="LAMP_0" sourcePort="a" target="NAND Gate_0" targetPort="o"/>
+<connection source="NOT Gate_0" sourcePort="a" target="SWITCH_2" targetPort="o"/>
+<connection source="SWITCH_3" sourcePort="o" target="NOT Gate_1" targetPort="a"/>
+</circuit>
+<circuit name="NAND Gate">
+<component name="not" posx="1377" posy="1116" type="not"/>
+<component name="and" posx="1323" posy="1115" type="and"/>
+<component name="o" posx="1427" posy="1115" type="out"/>
+<component name="a" posx="1264" posy="1086" type="in"/>
+<component name="b" posx="1264" posy="1140" type="in"/>
+<connection source="and" sourcePort="b" target="b" targetPort="o"/>
+<connection source="a" sourcePort="o" target="and" targetPort="a"/>
+<connection source="not" sourcePort="a" target="and" targetPort="o"/>
+<connection source="o" sourcePort="a" target="not" targetPort="o"/>
+</circuit>
+</circuits>

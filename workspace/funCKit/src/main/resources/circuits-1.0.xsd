@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+        xmlns:c="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0"
+        xmlns:tns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0">
+
+    <!-- Define root tag circuits -->
+    <xs:element name="circuits">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="1" maxOccurs="unbounded"
+                            ref="c:circuit"/>
+                <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"
+                        processContents="lax"/>
+            </xs:sequence>
+            <xs:attribute name="main" type="xs:string" use="required"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+
+        <!-- Names of circuits have to be unique, and the main circuit has to exist. -->
+        <xs:key name="circuitKey">
+            <xs:selector xpath="c:circuit"/>
+            <xs:field xpath="@name"/>
+        </xs:key>
+        <xs:keyref name="mainCircuit" refer="c:circuitKey">
+            <xs:selector xpath="."/>
+            <xs:field xpath="@main"/>
+        </xs:keyref>
+    </xs:element>
+
+    <!-- Define tag circuit -->
+    <xs:element name="circuit">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded"
+                            ref="c:component"/>
+                <xs:element minOccurs="0" maxOccurs="unbounded"
+                            ref="c:connection"/>
+                <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"
+                        processContents="lax"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+
+        <!-- Names of components have to be unique in each circuit,
+and connections have to refer to existing components from this circuit. -->
+        <xs:key name="componentKey">
+            <xs:selector xpath="c:component"/>
+            <xs:field xpath="@name"/>
+        </xs:key>
+        <xs:keyref name="connectionSourceComponent" refer="c:componentKey">
+            <xs:selector xpath="c:connection"/>
+            <xs:field xpath="@source"/>
+        </xs:keyref>
+        <xs:keyref name="connectionTargetComponent" refer="c:componentKey">
+            <xs:selector xpath="c:connection"/>
+            <xs:field xpath="@target"/>
+        </xs:keyref>
+
+        <!-- No two components at the same location in a circuit -->
+        <!-- <xs:unique name="componentLocation">
+          <xs:selector xpath="c:component"/>
+          <xs:field xpath="@posx"/>
+          <xs:field xpath="@posy"/>
+        </xs:unique>-->
+
+    </xs:element>
+
+    <!-- Define tag component -->
+    <xs:element name="component">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"
+                        processContents="lax"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="c:component-type" use="required"/>
+            <xs:attribute name="type2" type="xs:string"/>
+            <xs:attribute name="posx" type="xs:integer" use="required"/>
+            <xs:attribute name="posy" type="xs:integer" use="required"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- The list of allowed types for components -->
+    <xs:simpleType name="component-type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="and"/>
+            <xs:enumeration value="or"/>
+            <xs:enumeration value="id"/>
+            <xs:enumeration value="not"/>
+            <xs:enumeration value="flipflop"/>
+            <xs:enumeration value="in"/>
+            <xs:enumeration value="out"/>
+            <xs:enumeration value="clock"/>
+
+            <!-- In the following three cases, the attribute "type2" gives details about the type -->
+            <xs:enumeration value="circuit"/>
+            <!-- Refers to a circuit from this file -->
+            <xs:enumeration value="missing-circuit"/>
+            <!-- Refers to a circuit not included in this file -->
+            <xs:enumeration value="other"/>
+            <!-- Refers to a proprietary component -->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Define tag connection -->
+    <xs:element name="connection">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"
+                        processContents="lax"/>
+            </xs:sequence>
+            <xs:attribute name="source" type="xs:string" use="required"/>
+            <xs:attribute name="sourcePort" type="xs:string" use="required"/>
+            <xs:attribute name="target" type="xs:string" use="required"/>
+            <xs:attribute name="targetPort" type="xs:string" use="required"/>
+            <xs:anyAttribute namespace="##other" processContents="lax"/>
+        </xs:complexType>
+
+    </xs:element>
+
+</xs:schema>

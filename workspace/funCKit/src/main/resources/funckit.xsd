@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://git.sep2011.de/funckit"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://git.sep2011.de/funckit"
+           xmlns:tns="http://git.sep2011.de/funckit"
+           elementFormDefault="qualified" attributeFormDefault="qualified">
+
+    <!-- Define orientation type -->
+    <xs:simpleType name="orientationType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NORTH"/>
+            <xs:enumeration value="SOUTH"/>
+            <xs:enumeration value="EAST"/>
+            <xs:enumeration value="WEST"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Define accesspoint type -->
+    <xs:simpleType name="accessPointType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="input"/>
+            <xs:enumeration value="output"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Define UUID type -->
+    <xs:simpleType name="uuid">
+        <xs:restriction base="xs:string">
+            <xs:pattern
+                    value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}">
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Define attributes for tag circuit & component, etc. -->
+    <xs:attribute name="projectname" type="xs:string"/>
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="height" type="xs:nonNegativeInteger"/>
+    <xs:attribute name="width" type="xs:nonNegativeInteger"/>
+    <xs:attribute name="delay" type="xs:nonNegativeInteger"/>
+    <xs:attribute name="orientation" type="orientationType"/>
+
+    <!-- Define attributes for tag connection -->
+    <xs:attribute name="ignore" type="xs:boolean"/>
+    <xs:attribute name="target" type="uuid"/>
+    <xs:attribute name="source" type="uuid"/>
+
+    <!-- Define elements & attributes for tag component -->
+    <xs:attribute name="componentTypePoint" type="xs:boolean"/>
+
+    <!-- Define tag accesspoint -->
+    <xs:element name="accesspoint">
+        <xs:complexType>
+            <xs:attribute name="posx" type="xs:integer" use="required"/>
+            <xs:attribute name="posy" type="xs:integer" use="required"/>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="accessPointType" use="required"/>
+            <xs:attribute name="id" type="uuid" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Define tag mapping -->
+    <xs:element name="mapping">
+        <xs:complexType>
+            <xs:attribute name="innerPoint" type="uuid" use="required"/>
+            <xs:attribute name="outerPoint" type="uuid" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+
+<body>
+
+Do not forget mvn clean compile assembly:single and change the file name according to the version in pom.xml <br><br>
+
+<!-- MAYSCRIPT to call js methods from applet -->
+
+<applet code = 'de.sep2011.funckit.ELearningSolveApplet', 
+	archive = '../funCKit/target/funCKit-1.1-applet-dev-jar-with-dependencies-light.jar', 
+	width = '1024' ,
+	height = '768' ,
+	id = 'funCKitApplet'
+    	MAYSCRIPT>
+
+	<param name="fckbegin" value="test1.fck" />
+	<param name="fcksolution" value="test2.fck">
+	<param name="cmp0" value="3-Mux.cmp">
+	<param name="cmp1" value="customnand.cmp">
+
+
+</applet>
+
+<br />
+
+</body>
+
+</html>

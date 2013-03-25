@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuits xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0" xmlns:fck="http://git.sep2011.de/funckit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fck:projectname="schalter-lampe" main="funCKitCircuit" xsi:schemaLocation="     http://git.sep2011.de/funckit    http://git.sep2011.de/funckit.xsd">
+  <circuit name="funCKitCircuit">
+    <component fck:height="40" fck:name="Switch" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="90ed52e5-e651-4774-8ed6-d602778b4f89" posx="80" posy="200" type="in">
+      <fck:accesspoint fck:id="9e70ed2e-3c81-4863-89d6-e3605fd57dbd" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="Switch" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="df10c642-67b5-44ec-8327-5ab15e5e1b0d" posx="80" posy="280" type="in">
+      <fck:accesspoint fck:id="37fde0dc-bcda-4bd1-ba78-b441efb25293" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="Light" fck:orientation="WEST" fck:type="light" fck:width="40" name="68daefc0-615a-442d-b9d3-ff38f2331093" posx="560" posy="240" type="out">
+      <fck:accesspoint fck:id="1d82da6e-2517-4523-9eb5-5b9440490808" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+  </circuit>
+</circuits>

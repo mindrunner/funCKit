@@ -1,0 +1,18 @@
+workspace/.idea/
+workspace/funCKit/.idea/
+workspace/funCKit/funCKit.iml
+workspace/funCKit/target/
+workspace/funCKit/.classpath
+workspace/funCKit/.project
+workspace/funCKit/.settings/
+*.idea/
+*.iml
+funCKit.ipr
+funCKit.iws
+
+## ignore editor backup files
+*.backup
+*~
+
+workspace/funCKit/doc
+workspace/funCKit/doxydoc

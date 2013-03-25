@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="question/type/QTYPEID/db" VERSION="20060825" COMMENT="XMLDB file for this question type">
+  <TABLES>
+	<!-- TODO define any necessary tables here. This is probably most easily
+	done using the Moodle table editor. -->
+  </TABLES>
+</XMLDB>

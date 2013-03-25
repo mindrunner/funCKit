@@ -1,0 +1,294 @@
+% 
+% funCKit - functional Circuit Kit
+% Copyright (C) 2013  Lukas Elsner <open@mindrunner.de>
+% Copyright (C) 2013  Peter Dahlberg <catdog2@tuxzone.org>
+% Copyright (C) 2013  Julian Stier <mail@julian-stier.de>
+% Copyright (C) 2013  Sebastian Vetter <mail@b4sti.eu>
+% Copyright (C) 2013  Thomas Poxrucker <poxrucker_t@web.de>
+% Copyright (C) 2013  Alexander Treml <alex.treml@directbox.com>
+% 
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+% 
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+% 
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+% 
+
+
+\newglossaryentry{cmd-esc}{
+  name=ESC,
+  description={
+    Die ESC-Taste  }
+  }
+
+\newglossaryentry{cmd-scroll}{
+  name=Scrollrad,
+  description={
+    Das Scrollrad der Maus. Bei Betätigung lässt es sich horizontal scrollen.
+  }
+}
+\newglossaryentry{cmd-strg-scroll}{
+  name=Strg+Scroll,
+  description={
+    Bei gedrückter Taste lässt sich bei Betätigung des Scrollrades zoomen.
+   }
+}
+\newglossaryentry{cmd-alt-scroll}{
+  name=Alt+Scroll,
+  description={
+    Bei gedrückter Taste lässt sich bei Betätigung des Scrollrades vertikal scrollen.
+  }
+}
+\newglossaryentry{cmd-cmd}{
+  name=Cmd,
+  description={
+Die Command-Taste bei Mac OS X. Wechselt in den Zoom-Modus und tritt in Verbindung mit anderen Tasten oft in anderen Kombinationen auf.
+  }
+}
+
+\newglossaryentry{cmd-strg}{
+  name=Strg,
+  description={
+Die Steuerung-Taste. Wechselt in den Zoom-Modus und tritt in Verbindung mit anderen Tasten oft in anderen Kombinationen auf.
+  }
+}
+
+\newglossaryentry{cmd-strg-1}{
+  name=Strg+1,
+  description={
+	Wechselt in den Selektions-Modus.
+  }
+}
+
+\newglossaryentry{shift}{
+  name=Shift (gedrückt),
+  description={
+	Wechselt temporär während die Taste gedrückt ist in den Selektions-Modus.
+  }
+}
+
+\newglossaryentry{space}{
+  name=Leertaste (gedrückt),
+  description={
+	Wechselt temporär während die Taste gedrückt ist in den Ansicht-verschieben-Modus.
+  }
+}
+
+\newglossaryentry{newbricklist}{
+  name=Neue-Baustein-Liste,
+  description={
+	Bietet eine Auswahl an Bausteinen die zum Erstellen ausgewählt werden können.
+  }
+}
+
+\newglossaryentry{cmd-strg-2}{
+  name=Strg+2,
+  description={
+	Wechselt in den Hinzufügen-Modus.
+  }
+}
+
+\newglossaryentry{cmd-strg-3}{
+  name=Strg+3,
+  description={
+	Wechselt zum Kabelwerkzeug.
+  }
+}
+
+\newglossaryentry{cmd-strg-4}{
+  name=Strg+4,
+  description={
+	Wechselt in den Ansicht verschieben - Modus.
+  }
+}
+\newglossaryentry{cmd-strg-a}{
+  name=Strg+A,
+  description={
+	Markiert alle Elemente im Gitternetz.
+  }
+}
+\newglossaryentry{cmd-space}{
+  name=Leertaste (gedrückt),
+  description={
+	Wechselt in den Ansicht verschieben - Modus.
+  }
+}
+
+
+\newglossaryentry{cmd-strg-t}{
+  name=Strg+T,
+  description={
+	Öffnet einen neuen Tab der aktuell geöffneten Schaltung.
+  }
+}
+
+\newglossaryentry{cmd-strg-w}{
+  name=Strg+W,
+  description={
+	Schließt den aktuellen Tab.
+  }
+}
+
+\newglossaryentry{cmd-strg-n}{
+  name=Strg+N,
+  description={
+	Neues Projekt öffnen.
+  }
+}
+
+\newglossaryentry{cmd-strg-o}{
+  name=Strg+O,
+  description={
+	Gespeichertes Projekt öffnen.
+  }
+}
+
+\newglossaryentry{cmd-strg-s}{
+  name=Strg+S,
+  description={
+	Projekt speichern.
+  }
+}
+
+\newglossaryentry{cmd-strg-shift-s}{
+  name=Strg+Umschalt+S,
+  description={
+	Projekt speichern unter.
+  }
+}
+
+\newglossaryentry{cmd-strg-e}{
+  name=Strg+E,
+  description={
+	Komponente exportieren.
+  }
+}
+
+\newglossaryentry{cmd-strg-q}{
+  name=Strg+Q,
+  description={
+	Programm beenden.
+  }
+}
+
+\newglossaryentry{cmd-strg-z}{
+  name=Strg+Z,
+  description={
+	Rückgängigmachen von Editieraktionen.
+  }
+}
+
+\newglossaryentry{cmd-strg-y}{
+  name=Strg+Y,
+  description={
+	Wiederherstellen von Editieraktionen.
+  }
+}
+
+\newglossaryentry{cmd-strg-x}{
+  name=Strg+X,
+  description={
+	Ausschneiden eines markiertes Bereichs.
+  }
+}
+
+\newglossaryentry{cmd-strg-c}{
+  name=Strg+C,
+  description={
+	Kopieren eines markiertes Bereichs.
+  }
+}
+
+\newglossaryentry{cmd-strg-v}{
+  name=Strg+V,
+  description={
+	Einfügen eines davor kopierten Bereichs.
+  }
+}
+
+
+\newglossaryentry{cmd-entf}{
+  name=Entf,
+  description={
+	Löschen eines markierten Bereichs.
+  }
+}
+\newglossaryentry{cmd-f11}{
+  name=F11,
+  description={
+	Anzeigen des Programms in Vollbild.
+  }
+}
+
+\newglossaryentry{cmd-strg-plus}{
+  name=Strg+Plus,
+  description={
+	Vergrößert die Ansicht des Editierpanels.
+  }
+}
+
+\newglossaryentry{cmd-strg-minus}{
+  name=Strg+Minus,
+  description={
+	Verkleinert die Ansicht des Editierpanels.
+  }
+}
+
+
+\newglossaryentry{cmd-strg-0}{
+  name=Strg+0,
+  description={
+	Zoom auf 100-Prozent.
+  }
+}
+
+\newglossaryentry{cmd-strg-g}{
+  name=Strg+G,
+  description={
+	Anzeige des Gitternetzes.
+  }
+}
+\newglossaryentry{cmd-f1}{
+  name=F1,
+  description={
+	Anzeige des Benutzerhandbuches.
+  }
+}
+
+\newglossaryentry{Projekt}{
+  name=Projekt,
+  plural=Projekte,
+  description={
+       Ein Projekt besteht aus einer Hauptschaltung und bestimmten Zusatzinformationen wie einem Namen. Ein Projekt kann sowohl in eine Datei gespeichert werden als auch aus einer Datei geladen werden.
+  }
+}
+
+\newglossaryentry{Komponente}{
+  name=Komponente,
+  description={
+    Eine Komponente ist eine \gls{Schaltung} mit benannten Ein- und Ausgängen, die als Baustein in anderen Schaltungen verwendet werden kann.
+  },
+  plural=Komponenten
+}
+\newglossaryentry{Schaltung}{
+  name=Schaltung,
+  description={
+    Eine Schaltung ist eine Menge von Bausteinen oder \glspl{Komponente}, die mit Leitungen verbunden sind.
+  },
+  plural=Schaltungen
+}
+
+\newglossaryentry{Tooltip}{
+  name=Tooltip,
+  description={
+    Kästchen mit Informationen, die beim Überfahren eines Elements mit der Maus innerhalb der Benutzeroberfläche angezeigt werden.
+  },
+  plural=Tooltips
+}

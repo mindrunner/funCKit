@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="442.5625"
+   height="517.87506"
+   id="svg3168"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="schloss_teiltransparent.svg"
+   inkscape:export-filename="/home/peter/zeugs/sep2011-git/workspace/funCKit/src/main/resources/icons/misc/lock_13_16.png"
+   inkscape:export-xdpi="2.6972427"
+   inkscape:export-ydpi="2.6972427">
+  <defs
+     id="defs3170">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3020">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,8418.9 0,0 l 5952.76,0 0,8418.9 -5952.76,0 z"
+         id="path3022" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#ffffff"
+     borderopacity="0.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="0"
+     inkscape:zoom="0.7"
+     inkscape:cx="221.66733"
+     inkscape:cy="183.86057"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata3173">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-155.86341,-281.42733)">
+    <path
+       style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 21.25,199.03125 c 0,0 -21.25,-0.01 -21.25,21.25 L 0,512.625 c 0,0 -0.01,21.25 21.25,21.25 l 400.0625,0 c 0,0 21.25,0.01 21.25,-21.25 l 0,-292.34375 c 0,0 0.009,-21.25 -21.25,-21.25 l -400.0625,0 z m 200.03125,85.65625 c 29.5,0 53.40625,24.03375 53.40625,53.65625 0,20.65502 -11.6169,38.5691 -28.65625,47.53125 l 18.03125,67.84375 -86.71875,0 18.15625,-68.375 c -16.48181,-9.13253 -27.625,-26.75968 -27.625,-47 0,-29.6225 23.905,-53.65625 53.40625,-53.65625 z"
+       transform="translate(155.86341,265.42738)"
+       id="path3028"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 342.76966,281.42738 c 0,0 -152.375,-0.0188 -152.375,152.34375 l 0,47.59375 c 0,0 0.0201,127.657 116.90625,149.25 -0.82489,-3.76406 -1.30611,-7.62568 -1.40625,-11.59375 -70.49444,-35.70069 -70.5,-124.0625 -70.5,-124.0625 l 0,-0.75 c 0,-138.75 138.75,-138.75 138.75,-138.75 l 5.96875,0 c 138.75,0 138.75,138.75 138.75,138.75 l 0,0.75 c 0,70.83703 -36.15972,105.49805 -71.5625,122.46875 1e-5,0.0104 0,0.0208 0,0.0312 0,4.01936 -0.41259,7.92984 -1.15625,11.75 44.94999,-10.03354 117.71875,-42.52082 117.71875,-147.84375 l 0,-47.59375 c 0,0 0.0188,-152.34375 -152.34375,-152.34375 l -68.75,0 z"
+       id="path3024"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<script language="javascript">
+    var userName = "";
+    
+    // returns number
+    function getAge() { 
+        return 25;
+    }
+    // returns an object
+    function address() { 
+        this.street = "1566 Greenwood Lane";
+        this.city = "Santa Clara";
+        this.state = "CA";
+    }
+
+    // returns an array
+    function getPhoneNums() { 
+        return ["408-111-2222", "408-333-4444"];
+    }
+
+    function showMessageBox() {
+    	funCKitApplet.showMessageBox("I was called from JavaScript");
+    }
+
+    function openNewProject(name) {
+	funCKitApplet.openNewProject(name);
+    }
+
+</script>
+
+
+Do not forget mvn clean compile assembly:single and change the file name according to the version in pom.xml <br><br>
+
+<!-- MAYSCRIPT to call js methods from applet -->
+
+<applet code = 'de.sep2011.funckit.FunCKitTestApplet', 
+	archive = '../funCKit/target/funCKit-1.1-applet-dev-jar-with-dependencies-light.jar', 
+	width = '1024' ,
+	height = '768' ,
+	id = 'funCKitApplet'
+    	MAYSCRIPT>
+
+	<param name="test" value="Das ist ein test" />
+	<param name="appletconfarchive" value="test1.zip">
+</applet>
+
+<br />
+
+<a href="javascript:showMessageBox()" >klick me for a box</a> &nbsp;&nbsp;
+
+<form>
+<input type="text" name="namebox" value="JS Project" />
+<input type="button" value="New Project" onClick="openNewProject(this.form.namebox.value)" />
+</form>
+
+
+
+</body>
+
+</html>

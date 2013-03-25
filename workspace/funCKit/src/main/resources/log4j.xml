@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="ASYNC" class="org.apache.log4j.AsyncAppender">
+        <param name="LocationInfo" value="true"/>
+        <appender-ref ref="SystemOut"/>
+        <!-- <appender-ref ref="FileOut"/> -->
+    </appender>
+
+    <appender name="SystemOut" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%5p (%d{DATE}) [%t] (%F:%L) - %m%n"/>
+        </layout>
+    </appender>
+
+   <!-- <appender name="FileOut" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="${user.home}/.funckit/funCKit.log"/>
+        <param name="MaxFileSize" value="128MB"/>
+        <param name="MaxBackupIndex" value="0"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%5p (%d{DATE}) [%t] (%F:%L) - %m%n"/>
+        </layout>
+    </appender> -->
+
+
+    <appender name="ASYNC_PROFILER_RENDER"
+              class="org.apache.log4j.AsyncAppender">
+        <param name="LocationInfo" value="false"/>
+        <appender-ref ref="FileOut_PROFILER_RENDER"/>
+    </appender>
+
+    <appender name="ASYNC_PROFILER_SIMULATION"
+              class="org.apache.log4j.AsyncAppender">
+        <param name="LocationInfo" value="false"/>
+        <appender-ref ref="FileOut_PROFILER_SIMULATION"/>
+    </appender>
+
+    <appender name="ASYNC_PROFILER_BENCHMARK"
+              class="org.apache.log4j.AsyncAppender">
+        <param name="LocationInfo" value="false"/>
+        <appender-ref ref="SystemOut_PROFILER"/>
+        <appender-ref ref="FileOut_PROFILER_BENCHMARK"/>
+    </appender>
+
+    <appender name="SystemOut_PROFILER"
+              class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%m%n"/>
+        </layout>
+    </appender>
+
+     <!-- <appender name="FileOut_PROFILER_RENDER"
+              class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="${user.home}/.funckit/profiler.render.log"/>
+        <param name="MaxFileSize" value="128MB"/>
+        <param name="MaxBackupIndex" value="0"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%m%n"/>
+        </layout>
+    </appender> 
+
+    <appender name="FileOut_PROFILER_SIMULATION"
+              class="org.apache.log4j.RollingFileAppender">
+        <param name="File"
+               value="${user.home}/.funckit/profiler.simulation.log"/>
+        <param name="MaxFileSize" value="128MB"/>
+        <param name="MaxBackupIndex" value="0"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="FileOut_PROFILER_BENCHMARK"
+              class="org.apache.log4j.RollingFileAppender">
+        <param name="File"
+               value="${user.home}/.funckit/profiler.benchmark.log"/>
+        <param name="MaxFileSize" value="128MB"/>
+        <param name="MaxBackupIndex" value="0"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%m%n"/>
+        </layout>
+    </appender> -->
+
+    <logger name="funCKit.profiler.render" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="ASYNC_PROFILER_RENDER"/>
+    </logger>
+
+    <logger name="funCKit.profiler.simulation" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="ASYNC_PROFILER_SIMULATION"/>
+    </logger>
+
+    <logger name="funCKit.profiler.benchmark" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="ASYNC_PROFILER_BENCHMARK"/>
+    </logger>
+
+    <root>
+        <priority value="debug"/>
+        <appender-ref ref="ASYNC"/>
+    </root>
+
+</log4j:configuration>

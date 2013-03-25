@@ -1,0 +1,20 @@
+<circuits main="NAND Gate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0"
+  xmlns:ext="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example"
+  xsi:schemaLocation="
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0.xsd
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example.xsd">
+  <circuit name="NAND Gate">
+    <component name="not" posx="1377" posy="1116" type="not" />
+    <component name="and" posx="1323" posy="1115" type="and" />
+    <component name="o" posx="1427" posy="1115" type="out" />
+    <component name="a" posx="1264" posy="1086" type="in" />
+    <component name="b" posx="1264" posy="1140" type="in" />
+    <connection source="and" sourcePort="b" target="b" targetPort="o"/>
+    <connection source="a" sourcePort="o" target="and" targetPort="a"/>
+    <connection source="not" sourcePort="a" target="and" targetPort="o"/>
+    <connection source="o" sourcePort="a" target="not" targetPort="o"/>
+  </circuit>
+</circuits>

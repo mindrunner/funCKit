@@ -1,0 +1,19 @@
+<div class="qtext">
+    <?php echo $questiontext; ?>
+</div>
+
+<?php if ($image) { ?>
+    <img class="qimage" src="<?php echo $image; ?>" alt="" />
+<?php } ?>
+
+<div class="ablock clearfix">
+    <!-- TODO add the form controls that the student will use to enter their response. -->
+
+    <?php if ($feedback) { ?>
+        <div class="feedback">
+            <?php echo $feedback ?>
+        </div>
+    <?php } ?>
+
+    <?php $this->print_question_submit_buttons($question, $state, $cmoptions, $options); ?>
+</div>

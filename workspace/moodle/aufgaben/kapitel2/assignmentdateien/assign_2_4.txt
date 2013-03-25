@@ -1,0 +1,36 @@
+/* switch on and wait for stabilize */
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+/* switch off and wait for stabilize */
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+/* switch on and wait for stabilize */
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1

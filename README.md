@@ -2,9 +2,12 @@
 An open source circuit simulator written in Java. It can be run standalone or as applet.
 
 ## TODO:
+
 * Nothing, yet!
 
 ## License:
+In case you were wondering
+
     You may redistribute this program and/or modify it under the terms of
     the GNU General Public License as published by the Free Software Foundation,
     either version 3 of the License, or (at your option) any later version.

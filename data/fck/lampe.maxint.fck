@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuits fck:projectname="NewProject.unnamed" main="funCKitCircuit" xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0" xmlns:fck="http://git.sep2011.de/funckit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="     http://git.sep2011.de/funckit    http://git.sep2011.de/funckit.xsd">
+  <circuit name="funCKitCircuit">
+    <component fck:height="40" fck:name="Light" fck:orientation="WEST" fck:type="light" fck:width="40" name="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" posx="2147483628" posy="2147483628" type="out">
+      <fck:accesspoint fck:id="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+    <connection fck:name="" fck:source="e6981a82-e8b8-4c72-8cc5-f3c102766931" fck:target="e6981a82-e8b8-4c72-8cc5-f3c102766931" source="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" sourcePort="a" target="416f1f96-dd78-4e03-aba1-6d9f25d82eaf" targetPort="a"/>
+  </circuit>
+</circuits>

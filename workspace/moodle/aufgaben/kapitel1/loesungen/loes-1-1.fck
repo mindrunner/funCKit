@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuits xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0" xmlns:fck="http://git.sep2011.de/funckit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fck:projectname="schalter-lampe" main="funCKitCircuit" xsi:schemaLocation="     http://git.sep2011.de/funckit    http://git.sep2011.de/funckit.xsd">
+  <circuit name="funCKitCircuit">
+    <component fck:height="40" fck:name="Switch" fck:orientation="WEST" fck:type="switch" fck:value="false" fck:width="40" name="c371afc3-9694-43a8-ab5b-520ee1acfba0" posx="80" posy="260" type="in">
+      <fck:accesspoint fck:id="7eb5c021-fb86-4433-a4ac-cd8bfb556472" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <component fck:height="40" fck:name="Light" fck:orientation="WEST" fck:type="light" fck:width="40" name="2f843526-0786-4e6f-a855-4509ab44aafd" posx="680" posy="260" type="out">
+      <fck:accesspoint fck:id="ae1dd2d3-a680-4ac2-871a-6b8131ed51c7" fck:name="a" fck:posx="20" fck:posy="20" fck:type="input"/>
+    </component>
+    <component fck:delay="0" fck:height="40" fck:name="Not" fck:orientation="WEST" fck:width="40" name="3ecb3c30-66af-4a20-bf51-73f7ff34b7ad" posx="360" posy="260" type="not">
+      <fck:accesspoint fck:id="feaf1535-f395-4c84-bbde-26ac335c431c" fck:name="a" fck:posx="0" fck:posy="20" fck:type="input"/>
+      <fck:accesspoint fck:id="23369a4d-8442-4c85-a7f3-336520db15e2" fck:name="o" fck:posx="40" fck:posy="20" fck:type="output"/>
+    </component>
+    <connection fck:name="" fck:source="7eb5c021-fb86-4433-a4ac-cd8bfb556472" fck:target="feaf1535-f395-4c84-bbde-26ac335c431c" source="c371afc3-9694-43a8-ab5b-520ee1acfba0" sourcePort="o" target="3ecb3c30-66af-4a20-bf51-73f7ff34b7ad" targetPort="a"/>
+    <connection fck:name="" fck:source="23369a4d-8442-4c85-a7f3-336520db15e2" fck:target="ae1dd2d3-a680-4ac2-871a-6b8131ed51c7" source="3ecb3c30-66af-4a20-bf51-73f7ff34b7ad" sourcePort="o" target="2f843526-0786-4e6f-a855-4509ab44aafd" targetPort="a"/>
+  </circuit>
+</circuits>

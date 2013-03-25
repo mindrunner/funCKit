@@ -1,0 +1,420 @@
+<circuits main="mainCircuit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0"
+  xmlns:ext="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example"
+  xsi:schemaLocation="
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0.xsd
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/extension-example.xsd">
+<circuit name="mainCircuit">
+<component name="SWITCH_0" posx="781" posy="625" type="in"/>
+<component name="SWITCH_1" posx="1233" posy="552" type="in"/>
+<component name="SWITCH_2" posx="778" posy="701" type="in"/>
+<component name="SWITCH_3" posx="879" posy="670" type="in"/>
+<component name="SWITCH_4" posx="196" posy="448" type="in"/>
+<component name="SWITCH_5" posx="341" posy="451" type="in"/>
+<component name="SWITCH_6" posx="598" posy="170" type="in"/>
+<component name="SWITCH_7" posx="1361" posy="294" type="in"/>
+<component name="SWITCH_8" posx="830" posy="551" type="in"/>
+<component name="SWITCH_9" posx="617" posy="251" type="in"/>
+<component name="SWITCH_10" posx="336" posy="25" type="in"/>
+<component name="SWITCH_11" posx="1454" posy="262" type="in"/>
+<component name="SWITCH_12" posx="1942" posy="973" type="in"/>
+<component name="SWITCH_13" posx="2394" posy="900" type="in"/>
+<component name="SWITCH_14" posx="1939" posy="1049" type="in"/>
+<component name="SWITCH_15" posx="2040" posy="1018" type="in"/>
+<component name="SWITCH_16" posx="1357" posy="796" type="in"/>
+<component name="SWITCH_17" posx="1502" posy="799" type="in"/>
+<component name="SWITCH_18" posx="1759" posy="518" type="in"/>
+<component name="SWITCH_19" posx="2522" posy="642" type="in"/>
+<component name="SWITCH_20" posx="1991" posy="899" type="in"/>
+<component name="SWITCH_21" posx="1778" posy="599" type="in"/>
+<component name="SWITCH_22" posx="1497" posy="373" type="in"/>
+<component name="SWITCH_23" posx="2615" posy="610" type="in"/>
+<component name="LAMP_0" posx="482" posy="293" type="out"/>
+<component name="LAMP_1" posx="738" posy="469" type="out"/>
+<component name="LAMP_2" posx="901" posy="-361" type="out"/>
+<component name="LAMP_3" posx="810" posy="303" type="out"/>
+<component name="LAMP_4" posx="209" posy="154" type="out"/>
+<component name="LAMP_5" posx="416" posy="574" type="out"/>
+<component name="LAMP_6" posx="357" posy="270" type="out"/>
+<component name="LAMP_7" posx="701" posy="646" type="out"/>
+<component name="LAMP_8" posx="817" posy="109" type="out"/>
+<component name="LAMP_9" posx="1093" posy="626" type="out"/>
+<component name="LAMP_10" posx="1114" posy="66" type="out"/>
+<component name="LAMP_11" posx="1160" posy="638" type="out"/>
+<component name="LAMP_12" posx="812" posy="489" type="out"/>
+<component name="LAMP_13" posx="858" posy="278" type="out"/>
+<component name="LAMP_14" posx="1069" posy="678" type="out"/>
+<component name="LAMP_15" posx="142" posy="-271" type="out"/>
+<component name="LAMP_16" posx="96" posy="113" type="out"/>
+<component name="LAMP_17" posx="172" posy="551" type="out"/>
+<component name="LAMP_18" posx="541" posy="-267" type="out"/>
+<component name="LAMP_19" posx="269" posy="64" type="out"/>
+<component name="LAMP_20" posx="241" posy="13" type="out"/>
+<component name="LAMP_21" posx="425" posy="-294" type="out"/>
+<component name="LAMP_22" posx="555" posy="-27" type="out"/>
+<component name="LAMP_23" posx="682" posy="-360" type="out"/>
+<component name="LAMP_24" posx="681" posy="27" type="out"/>
+<component name="LAMP_25" posx="262" posy="-336" type="out"/>
+<component name="LAMP_26" posx="454" posy="71" type="out"/>
+<component name="LAMP_27" posx="376" posy="-367" type="out"/>
+<component name="LAMP_28" posx="1164" posy="-305" type="out"/>
+<component name="LAMP_29" posx="1018" posy="-12" type="out"/>
+<component name="LAMP_30" posx="1069" posy="126" type="out"/>
+<component name="LAMP_31" posx="1119" posy="-43" type="out"/>
+<component name="LAMP_32" posx="1235" posy="77" type="out"/>
+<component name="LAMP_33" posx="1170" posy="-204" type="out"/>
+<component name="LAMP_34" posx="911" posy="-117" type="out"/>
+<component name="LAMP_35" posx="1134" posy="139" type="out"/>
+<component name="LAMP_36" posx="289" posy="-182" type="out"/>
+<component name="LAMP_37" posx="1440" posy="1" type="out"/>
+<component name="LAMP_38" posx="475" posy="18" type="out"/>
+<component name="LAMP_39" posx="598" posy="-344" type="out"/>
+<component name="LAMP_40" posx="247" posy="-162" type="out"/>
+<component name="LAMP_41" posx="375" posy="-76" type="out"/>
+<component name="LAMP_42" posx="483" posy="-213" type="out"/>
+<component name="LAMP_43" posx="367" posy="-240" type="out"/>
+<component name="LAMP_44" posx="1643" posy="641" type="out"/>
+<component name="LAMP_45" posx="1899" posy="817" type="out"/>
+<component name="LAMP_46" posx="2062" posy="-13" type="out"/>
+<component name="LAMP_47" posx="1971" posy="651" type="out"/>
+<component name="LAMP_48" posx="1370" posy="502" type="out"/>
+<component name="LAMP_49" posx="1577" posy="922" type="out"/>
+<component name="LAMP_50" posx="1518" posy="618" type="out"/>
+<component name="LAMP_51" posx="1862" posy="994" type="out"/>
+<component name="LAMP_52" posx="1978" posy="457" type="out"/>
+<component name="LAMP_53" posx="2254" posy="974" type="out"/>
+<component name="LAMP_54" posx="2275" posy="414" type="out"/>
+<component name="LAMP_55" posx="2321" posy="986" type="out"/>
+<component name="LAMP_56" posx="1973" posy="837" type="out"/>
+<component name="LAMP_57" posx="2019" posy="626" type="out"/>
+<component name="LAMP_58" posx="2230" posy="1026" type="out"/>
+<component name="LAMP_59" posx="1303" posy="77" type="out"/>
+<component name="LAMP_60" posx="1257" posy="461" type="out"/>
+<component name="LAMP_61" posx="1333" posy="899" type="out"/>
+<component name="LAMP_62" posx="1702" posy="81" type="out"/>
+<component name="LAMP_63" posx="1430" posy="412" type="out"/>
+<component name="LAMP_64" posx="1402" posy="361" type="out"/>
+<component name="LAMP_65" posx="1586" posy="54" type="out"/>
+<component name="LAMP_66" posx="1716" posy="321" type="out"/>
+<component name="LAMP_67" posx="1843" posy="-12" type="out"/>
+<component name="LAMP_68" posx="1842" posy="375" type="out"/>
+<component name="LAMP_69" posx="1423" posy="12" type="out"/>
+<component name="LAMP_70" posx="1615" posy="419" type="out"/>
+<component name="LAMP_71" posx="1537" posy="-19" type="out"/>
+<component name="LAMP_72" posx="2325" posy="43" type="out"/>
+<component name="LAMP_73" posx="2179" posy="336" type="out"/>
+<component name="LAMP_74" posx="2230" posy="474" type="out"/>
+<component name="LAMP_75" posx="2280" posy="305" type="out"/>
+<component name="LAMP_76" posx="2396" posy="425" type="out"/>
+<component name="LAMP_77" posx="2331" posy="144" type="out"/>
+<component name="LAMP_78" posx="2072" posy="231" type="out"/>
+<component name="LAMP_79" posx="2311" posy="482" type="out"/>
+<component name="LAMP_80" posx="1450" posy="166" type="out"/>
+<component name="LAMP_81" posx="2601" posy="349" type="out"/>
+<component name="LAMP_82" posx="1636" posy="366" type="out"/>
+<component name="LAMP_83" posx="1759" posy="4" type="out"/>
+<component name="LAMP_84" posx="1408" posy="186" type="out"/>
+<component name="LAMP_85" posx="1536" posy="272" type="out"/>
+<component name="LAMP_86" posx="1644" posy="135" type="out"/>
+<component name="LAMP_87" posx="1528" posy="108" type="out"/>
+<component name="OR Gate_0" posx="774" posy="-132" type="or"/>
+<component name="NOT Gate_0" posx="531" posy="-72" type="not"/>
+<component name="AND Gate_0" posx="621" posy="377" type="and"/>
+<component name="SPLITTER_0" posx="1220" posy="-282" type="id"/>
+<component name="FLIPFLOP Gate_0" posx="792" posy="-9" type="flipflop"/>
+<component name="NAND Gate_0" posx="442" posy="472" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_1" posx="821" posy="-202" type="or"/>
+<component name="NOT Gate_1" posx="678" posy="94" type="not"/>
+<component name="AND Gate_1" posx="717" posy="230" type="and"/>
+<component name="SPLITTER_1" posx="1391" posy="192" type="id"/>
+<component name="FLIPFLOP Gate_1" posx="1026" posy="255" type="flipflop"/>
+<component name="NAND Gate_1" posx="685" posy="560" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_2" posx="294" posy="185" type="or"/>
+<component name="NOT Gate_2" posx="513" posy="447" type="not"/>
+<component name="AND Gate_2" posx="105" posy="438" type="and"/>
+<component name="SPLITTER_2" posx="463" posy="365" type="id"/>
+<component name="FLIPFLOP Gate_2" posx="512" posy="219" type="flipflop"/>
+<component name="NAND Gate_2" posx="273" posy="558" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_3" posx="552" posy="322" type="or"/>
+<component name="NOT Gate_3" posx="1297" posy="-178" type="not"/>
+<component name="AND Gate_3" posx="383" posy="185" type="and"/>
+<component name="SPLITTER_3" posx="605" posy="80" type="id"/>
+<component name="FLIPFLOP Gate_3" posx="746" posy="146" type="flipflop"/>
+<component name="NAND Gate_3" posx="292" posy="688" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_4" posx="824" posy="355" type="or"/>
+<component name="NOT Gate_4" posx="1053" posy="186" type="not"/>
+<component name="AND Gate_4" posx="584" posy="671" type="and"/>
+<component name="SPLITTER_4" posx="1105" posy="242" type="id"/>
+<component name="FLIPFLOP Gate_4" posx="1230" posy="197" type="flipflop"/>
+<component name="NAND Gate_4" posx="1030" posy="667" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_5" posx="1311" posy="286" type="or"/>
+<component name="NOT Gate_5" posx="1351" posy="142" type="not"/>
+<component name="AND Gate_5" posx="1205" posy="353" type="and"/>
+<component name="NAND Gate_5" posx="1312" posy="493" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_6" posx="953" posy="500" type="or"/>
+<component name="NOT Gate_6" posx="923" posy="609" type="not"/>
+<component name="AND Gate_6" posx="523" posy="571" type="and"/>
+<component name="SPLITTER_5" posx="977" posy="593" type="id"/>
+<component name="FLIPFLOP Gate_5" posx="1298" posy="620" type="flipflop"/>
+<component name="OR Gate_7" posx="1002" posy="375" type="or"/>
+<component name="NOT Gate_7" posx="1024" posy="578" type="not"/>
+<component name="AND Gate_7" posx="1098" posy="507" type="and"/>
+<component name="SPLITTER_6" posx="1205" posy="142" type="id"/>
+<component name="NAND Gate_6" posx="924" posy="699" type="circuit" type2="NAND Gate"/>
+<component name="SPLITTER_7" posx="169" posy="-44" type="id"/>
+<component name="FLIPFLOP Gate_6" posx="201" posy="-98" type="flipflop"/>
+<component name="NOT Gate_8" posx="169" posy="50" type="not"/>
+<component name="SPLITTER_8" posx="171" posy="347" type="id"/>
+<component name="FLIPFLOP Gate_7" posx="323" posy="316" type="flipflop"/>
+<component name="SPLITTER_9" posx="174" posy="-173" type="id"/>
+<component name="FLIPFLOP Gate_8" posx="109" posy="-102" type="flipflop"/>
+<component name="OR Gate_8" posx="249" posy="354" type="or"/>
+<component name="NOT Gate_9" posx="524" posy="133" type="not"/>
+<component name="AND Gate_8" posx="107" posy="32" type="and"/>
+<component name="SPLITTER_10" posx="479" posy="-116" type="id"/>
+<component name="NAND Gate_7" posx="599" posy="515" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_9" posx="708" posy="-47" type="or"/>
+<component name="AND Gate_9" posx="1090" posy="-279" type="and"/>
+<component name="NAND Gate_8" posx="392" posy="693" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_10" posx="129" posy="186" type="or"/>
+<component name="NOT Gate_10" posx="312" posy="462" type="not"/>
+<component name="SPLITTER_11" posx="431" posy="246" type="id"/>
+<component name="FLIPFLOP Gate_9" posx="495" posy="702" type="flipflop"/>
+<component name="OR Gate_11" posx="219" posy="259" type="or"/>
+<component name="NOT Gate_11" posx="568" posy="49" type="not"/>
+<component name="AND Gate_10" posx="319" posy="99" type="and"/>
+<component name="OR Gate_12" posx="893" posy="67" type="or"/>
+<component name="NOT Gate_12" posx="855" posy="-291" type="not"/>
+<component name="AND Gate_11" posx="1466" posy="126" type="and"/>
+<component name="SPLITTER_12" posx="848" posy="-118" type="id"/>
+<component name="FLIPFLOP Gate_10" posx="927" posy="-28" type="flipflop"/>
+<component name="NAND Gate_9" posx="433" posy="-77" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_13" posx="835" posy="75" type="or"/>
+<component name="NOT Gate_13" posx="833" posy="-57" type="not"/>
+<component name="AND Gate_12" posx="1034" posy="-322" type="and"/>
+<component name="SPLITTER_13" posx="1046" posy="-62" type="id"/>
+<component name="FLIPFLOP Gate_11" posx="1108" posy="-161" type="flipflop"/>
+<component name="NAND Gate_10" posx="719" posy="-208" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_14" posx="427" posy="-214" type="or"/>
+<component name="NOT Gate_14" posx="513" posy="-165" type="not"/>
+<component name="AND Gate_13" posx="258" posy="-62" type="and"/>
+<component name="SPLITTER_14" posx="888" posy="-231" type="id"/>
+<component name="FLIPFLOP Gate_12" posx="1028" posy="-230" type="flipflop"/>
+<component name="NAND Gate_11" posx="391" posy="342" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_15" posx="935" posy="-203" type="or"/>
+<component name="NOT Gate_15" posx="751" posy="-321" type="not"/>
+<component name="AND Gate_14" posx="1322" posy="-316" type="and"/>
+<component name="SPLITTER_15" posx="615" posy="-61" type="id"/>
+<component name="FLIPFLOP Gate_13" posx="1000" posy="92" type="flipflop"/>
+<component name="NAND Gate_12" posx="1411" posy="-300" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_16" posx="1080" posy="-1" type="or"/>
+<component name="NOT Gate_16" posx="1140" posy="23" type="not"/>
+<component name="AND Gate_15" posx="621" posy="-2" type="and"/>
+<component name="SPLITTER_16" posx="1163" posy="-121" type="id"/>
+<component name="FLIPFLOP Gate_14" posx="1331" posy="-15" type="flipflop"/>
+<component name="NAND Gate_13" posx="945" posy="298" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_17" posx="1223" posy="-124" type="or"/>
+<component name="NOT Gate_17" posx="1241" posy="-8" type="not"/>
+<component name="AND Gate_16" posx="1085" posy="338" type="and"/>
+<component name="NAND Gate_14" posx="1378" posy="78" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_18" posx="743" posy="28" type="or"/>
+<component name="NOT Gate_18" posx="1432" posy="-86" type="not"/>
+<component name="AND Gate_17" posx="1389" posy="-177" type="and"/>
+<component name="SPLITTER_17" posx="1367" posy="378" type="id"/>
+<component name="FLIPFLOP Gate_15" posx="1264" posy="129" type="flipflop"/>
+<component name="OR Gate_19" posx="925" posy="180" type="or"/>
+<component name="NOT Gate_19" posx="1159" posy="78" type="not"/>
+<component name="AND Gate_18" posx="657" posy="160" type="and"/>
+<component name="SPLITTER_18" posx="1210" posy="33" type="id"/>
+<component name="NAND Gate_15" posx="898" posy="412" type="circuit" type2="NAND Gate"/>
+<component name="SPLITTER_19" posx="211" posy="-232" type="id"/>
+<component name="FLIPFLOP Gate_16" posx="323" posy="-298" type="flipflop"/>
+<component name="NOT Gate_20" posx="216" posy="-286" type="not"/>
+<component name="SPLITTER_20" posx="387" posy="-152" type="id"/>
+<component name="FLIPFLOP Gate_17" posx="494" posy="-361" type="flipflop"/>
+<component name="SPLITTER_21" posx="302" posy="-95" type="id"/>
+<component name="FLIPFLOP Gate_18" posx="451" posy="159" type="flipflop"/>
+<component name="OR Gate_20" posx="805" posy="-369" type="or"/>
+<component name="NOT Gate_21" posx="994" posy="-169" type="not"/>
+<component name="AND Gate_19" posx="336" posy="-166" type="and"/>
+<component name="SPLITTER_22" posx="719" posy="-278" type="id"/>
+<component name="NAND Gate_16" posx="418" posy="34" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_21" posx="681" posy="-261" type="or"/>
+<component name="AND Gate_20" posx="1209" posy="-364" type="and"/>
+<component name="NAND Gate_17" posx="700" posy="-147" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_22" posx="142" posy="286" type="or"/>
+<component name="NOT Gate_22" posx="396" posy="-10" type="not"/>
+<component name="SPLITTER_23" posx="588" posy="-237" type="id"/>
+<component name="FLIPFLOP Gate_19" posx="617" posy="-151" type="flipflop"/>
+<component name="OR Gate_23" posx="268" posy="-257" type="or"/>
+<component name="NOT Gate_23" posx="635" posy="-252" type="not"/>
+<component name="AND Gate_21" posx="67" posy="305" type="and"/>
+<component name="OR Gate_24" posx="1935" posy="216" type="or"/>
+<component name="NOT Gate_24" posx="1692" posy="276" type="not"/>
+<component name="AND Gate_22" posx="1782" posy="725" type="and"/>
+<component name="SPLITTER_24" posx="2381" posy="66" type="id"/>
+<component name="FLIPFLOP Gate_20" posx="1953" posy="339" type="flipflop"/>
+<component name="NAND Gate_18" posx="1603" posy="820" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_25" posx="1982" posy="146" type="or"/>
+<component name="NOT Gate_25" posx="1839" posy="442" type="not"/>
+<component name="AND Gate_23" posx="1878" posy="578" type="and"/>
+<component name="SPLITTER_25" posx="2552" posy="540" type="id"/>
+<component name="FLIPFLOP Gate_21" posx="2163" posy="608" type="flipflop"/>
+<component name="NAND Gate_19" posx="1846" posy="908" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_26" posx="1455" posy="533" type="or"/>
+<component name="NOT Gate_26" posx="1674" posy="795" type="not"/>
+<component name="AND Gate_24" posx="1266" posy="786" type="and"/>
+<component name="SPLITTER_26" posx="1624" posy="713" type="id"/>
+<component name="FLIPFLOP Gate_22" posx="1673" posy="567" type="flipflop"/>
+<component name="NAND Gate_20" posx="1434" posy="906" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_27" posx="1713" posy="670" type="or"/>
+<component name="NOT Gate_27" posx="2458" posy="170" type="not"/>
+<component name="AND Gate_25" posx="1544" posy="533" type="and"/>
+<component name="SPLITTER_27" posx="1766" posy="428" type="id"/>
+<component name="FLIPFLOP Gate_23" posx="1907" posy="494" type="flipflop"/>
+<component name="NAND Gate_21" posx="1453" posy="1036" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_28" posx="1985" posy="703" type="or"/>
+<component name="NOT Gate_28" posx="2214" posy="534" type="not"/>
+<component name="AND Gate_26" posx="1745" posy="1019" type="and"/>
+<component name="SPLITTER_28" posx="2297" posy="584" type="id"/>
+<component name="FLIPFLOP Gate_24" posx="2391" posy="545" type="flipflop"/>
+<component name="NAND Gate_22" posx="2191" posy="1015" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_29" posx="2472" posy="634" type="or"/>
+<component name="NOT Gate_29" posx="2512" posy="490" type="not"/>
+<component name="AND Gate_27" posx="2366" posy="701" type="and"/>
+<component name="NAND Gate_23" posx="2473" posy="841" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_30" posx="2114" posy="855" type="or"/>
+<component name="NOT Gate_30" posx="2084" posy="957" type="not"/>
+<component name="AND Gate_28" posx="1684" posy="919" type="and"/>
+<component name="SPLITTER_29" posx="2138" posy="941" type="id"/>
+<component name="FLIPFLOP Gate_25" posx="2459" posy="968" type="flipflop"/>
+<component name="OR Gate_31" posx="2163" posy="723" type="or"/>
+<component name="NOT Gate_31" posx="2185" posy="926" type="not"/>
+<component name="AND Gate_29" posx="2259" posy="855" type="and"/>
+<component name="SPLITTER_30" posx="2366" posy="490" type="id"/>
+<component name="NAND Gate_24" posx="2085" posy="1047" type="circuit" type2="NAND Gate"/>
+<component name="SPLITTER_31" posx="1330" posy="304" type="id"/>
+<component name="FLIPFLOP Gate_26" posx="1362" posy="250" type="flipflop"/>
+<component name="NOT Gate_32" posx="1330" posy="398" type="not"/>
+<component name="SPLITTER_32" posx="1332" posy="695" type="id"/>
+<component name="FLIPFLOP Gate_27" posx="1484" posy="664" type="flipflop"/>
+<component name="SPLITTER_33" posx="1335" posy="175" type="id"/>
+<component name="FLIPFLOP Gate_28" posx="1270" posy="246" type="flipflop"/>
+<component name="OR Gate_32" posx="1410" posy="702" type="or"/>
+<component name="NOT Gate_33" posx="1685" posy="481" type="not"/>
+<component name="AND Gate_30" posx="1268" posy="380" type="and"/>
+<component name="SPLITTER_34" posx="1640" posy="232" type="id"/>
+<component name="NAND Gate_25" posx="1760" posy="863" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_33" posx="1869" posy="301" type="or"/>
+<component name="AND Gate_31" posx="2251" posy="69" type="and"/>
+<component name="NAND Gate_26" posx="1553" posy="1041" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_34" posx="1290" posy="534" type="or"/>
+<component name="NOT Gate_34" posx="1473" posy="810" type="not"/>
+<component name="SPLITTER_35" posx="1592" posy="594" type="id"/>
+<component name="FLIPFLOP Gate_29" posx="1656" posy="1050" type="flipflop"/>
+<component name="OR Gate_35" posx="1380" posy="607" type="or"/>
+<component name="NOT Gate_35" posx="1729" posy="397" type="not"/>
+<component name="AND Gate_32" posx="1480" posy="447" type="and"/>
+<component name="OR Gate_36" posx="2054" posy="415" type="or"/>
+<component name="NOT Gate_36" posx="2016" posy="57" type="not"/>
+<component name="AND Gate_33" posx="2627" posy="474" type="and"/>
+<component name="SPLITTER_36" posx="2009" posy="230" type="id"/>
+<component name="FLIPFLOP Gate_30" posx="2088" posy="320" type="flipflop"/>
+<component name="NAND Gate_27" posx="1594" posy="271" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_37" posx="1996" posy="423" type="or"/>
+<component name="NOT Gate_37" posx="1994" posy="291" type="not"/>
+<component name="AND Gate_34" posx="2195" posy="26" type="and"/>
+<component name="SPLITTER_37" posx="2207" posy="286" type="id"/>
+<component name="FLIPFLOP Gate_31" posx="2269" posy="187" type="flipflop"/>
+<component name="NAND Gate_28" posx="1880" posy="140" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_38" posx="1588" posy="134" type="or"/>
+<component name="NOT Gate_38" posx="1674" posy="183" type="not"/>
+<component name="AND Gate_35" posx="1419" posy="286" type="and"/>
+<component name="SPLITTER_38" posx="2049" posy="117" type="id"/>
+<component name="FLIPFLOP Gate_32" posx="2189" posy="118" type="flipflop"/>
+<component name="NAND Gate_29" posx="1552" posy="690" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_39" posx="2096" posy="145" type="or"/>
+<component name="NOT Gate_39" posx="1912" posy="27" type="not"/>
+<component name="AND Gate_36" posx="2483" posy="32" type="and"/>
+<component name="SPLITTER_39" posx="1776" posy="287" type="id"/>
+<component name="FLIPFLOP Gate_33" posx="2161" posy="440" type="flipflop"/>
+<component name="NAND Gate_30" posx="2572" posy="48" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_40" posx="2241" posy="347" type="or"/>
+<component name="NOT Gate_40" posx="2301" posy="371" type="not"/>
+<component name="AND Gate_37" posx="1782" posy="346" type="and"/>
+<component name="SPLITTER_40" posx="2324" posy="227" type="id"/>
+<component name="FLIPFLOP Gate_34" posx="2492" posy="333" type="flipflop"/>
+<component name="NAND Gate_31" posx="2106" posy="646" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_41" posx="2384" posy="224" type="or"/>
+<component name="NOT Gate_41" posx="2402" posy="340" type="not"/>
+<component name="AND Gate_38" posx="2246" posy="686" type="and"/>
+<component name="NAND Gate_32" posx="2539" posy="426" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_42" posx="1904" posy="376" type="or"/>
+<component name="NOT Gate_42" posx="2593" posy="262" type="not"/>
+<component name="AND Gate_39" posx="2550" posy="171" type="and"/>
+<component name="SPLITTER_41" posx="2528" posy="726" type="id"/>
+<component name="FLIPFLOP Gate_35" posx="2425" posy="477" type="flipflop"/>
+<component name="OR Gate_43" posx="2086" posy="528" type="or"/>
+<component name="NOT Gate_43" posx="2320" posy="426" type="not"/>
+<component name="AND Gate_40" posx="1818" posy="508" type="and"/>
+<component name="SPLITTER_42" posx="2371" posy="381" type="id"/>
+<component name="NAND Gate_33" posx="2068" posy="734" type="circuit" type2="NAND Gate"/>
+<component name="SPLITTER_43" posx="1372" posy="116" type="id"/>
+<component name="FLIPFLOP Gate_36" posx="1484" posy="50" type="flipflop"/>
+<component name="NOT Gate_44" posx="1377" posy="62" type="not"/>
+<component name="SPLITTER_44" posx="1548" posy="196" type="id"/>
+<component name="FLIPFLOP Gate_37" posx="1655" posy="-13" type="flipflop"/>
+<component name="SPLITTER_45" posx="1463" posy="253" type="id"/>
+<component name="FLIPFLOP Gate_38" posx="1612" posy="507" type="flipflop"/>
+<component name="OR Gate_44" posx="1966" posy="-21" type="or"/>
+<component name="NOT Gate_45" posx="2155" posy="179" type="not"/>
+<component name="AND Gate_41" posx="1497" posy="182" type="and"/>
+<component name="SPLITTER_46" posx="1880" posy="70" type="id"/>
+<component name="NAND Gate_34" posx="1579" posy="382" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_45" posx="1842" posy="87" type="or"/>
+<component name="AND Gate_42" posx="2370" posy="-16" type="and"/>
+<component name="NAND Gate_35" posx="1861" posy="201" type="circuit" type2="NAND Gate"/>
+<component name="OR Gate_46" posx="1303" posy="634" type="or"/>
+<component name="NOT Gate_46" posx="1557" posy="338" type="not"/>
+<component name="SPLITTER_47" posx="1749" posy="111" type="id"/>
+<component name="FLIPFLOP Gate_39" posx="1778" posy="197" type="flipflop"/>
+<component name="OR Gate_47" posx="1429" posy="91" type="or"/>
+<component name="NOT Gate_47" posx="1796" posy="96" type="not"/>
+<component name="AND Gate_43" posx="1228" posy="653" type="and"/>
+<connection source="LAMP_3" sourcePort="a" target="AND Gate_1" targetPort="o"/>
+<connection source="FLIPFLOP Gate_13" sourcePort="r" target="FLIPFLOP Gate_0" targetPort="q"/>
+<connection source="NOT Gate_1" sourcePort="a" target="SPLITTER_3" targetPort="o"/>
+<connection source="FLIPFLOP Gate_14" sourcePort="r" target="NOT Gate_17" targetPort="o"/>
+<connection source="OR Gate_17" sourcePort="a" target="SPLITTER_16" targetPort="o"/>
+<connection source="FLIPFLOP Gate_14" sourcePort="r" target="OR Gate_17" targetPort="o"/>
+<connection source="LAMP_33" sourcePort="a" target="NOT Gate_3" targetPort="o"/>
+<connection source="FLIPFLOP Gate_11" sourcePort="r" target="FLIPFLOP Gate_7" targetPort="q"/>
+<connection source="AND Gate_16" sourcePort="a" target="AND Gate_5" targetPort="a"/>
+<connection source="NAND Gate_15" sourcePort="b" target="OR Gate_7" targetPort="b"/>
+<connection source="NAND Gate_15" sourcePort="a" target="OR Gate_4" targetPort="b"/>
+<connection source="LAMP_12" sourcePort="a" target="NAND Gate_15" targetPort="b"/>
+<connection source="AND Gate_5" sourcePort="a" target="SPLITTER_4" targetPort="o"/>
+<connection source="AND Gate_5" sourcePort="b" target="SPLITTER_4" targetPort="o"/>
+<connection source="FLIPFLOP Gate_4" sourcePort="s" target="SPLITTER_4" targetPort="o"/>
+<connection source="FLIPFLOP Gate_4" sourcePort="r" target="SPLITTER_4" targetPort="o"/>
+<connection source="SPLITTER_6" sourcePort="a" target="SPLITTER_4" targetPort="o"/>
+<connection source="LAMP_35" sourcePort="a" target="SPLITTER_4" targetPort="o"/>
+<connection source="AND Gate_30" sourcePort="a" target="SPLITTER_4" targetPort="o"/>
+<connection source="FLIPFLOP Gate_28" sourcePort="s" target="SPLITTER_4" targetPort="o"/>
+<connection source="LAMP_32" sourcePort="a" target="SPLITTER_4" targetPort="o"/>
+<connection source="LAMP_59" sourcePort="a" target="SPLITTER_4" targetPort="o"/>
+</circuit>
+<circuit name="NAND Gate">
+<component name="not" posx="1377" posy="1116" type="not"/>
+<component name="and" posx="1323" posy="1115" type="and"/>
+<component name="o" posx="1427" posy="1115" type="out"/>
+<component name="a" posx="1264" posy="1086" type="in"/>
+<component name="b" posx="1264" posy="1140" type="in"/>
+<connection source="and" sourcePort="b" target="b" targetPort="o"/>
+<connection source="a" sourcePort="o" target="and" targetPort="a"/>
+<connection source="not" sourcePort="a" target="and" targetPort="o"/>
+<connection source="o" sourcePort="a" target="not" targetPort="o"/>
+</circuit>
+</circuits>

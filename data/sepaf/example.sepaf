@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuits main="main"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0"
+  xsi:schemaLocation="
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0
+    http://www.sosy-lab.org/Teaching/2011-WS-SEP/xmlns/circuits-1.0.xsd">
+  <circuit name="clock">
+    <component type="not" name="not0" posx="50" posy="0"/>
+    <component type="other" type2="delay" name="delay0" posx="100" posy="0"/>
+    <component type="other" type2="delay" name="delay1" posx="150" posy="0"/>
+    <component type="other" type2="delay" name="delay2" posx="200" posy="0"/>
+    <component type="other" type2="delay" name="delay3" posx="250" posy="0"/>
+    <component type="id" name="joint0" posx="300" posy="0"/>
+    <component type="out" name="clk" posx="350" posy="0"/>
+    <component type="id" name="joint1" posx="300" posy="50"/>
+    <component type="id" name="joint2" posx="100" posy="50"/>
+    <component type="id" name="joint3" posx="0" posy="0"/>
+    
+    <connection source="not0" sourcePort="o" target="delay0" targetPort="a"/>
+    <connection source="delay0" sourcePort="o" target="delay1" targetPort="a"/>
+    <connection source="delay1" sourcePort="o" target="delay2" targetPort="a"/>
+    <connection source="delay2" sourcePort="o" target="delay3" targetPort="a"/>
+    <connection source="delay3" sourcePort="o" target="joint0" targetPort="a"/>
+    <connection source="joint0" sourcePort="o" target="clk" targetPort="a"/>
+    <connection source="joint0" sourcePort="o" target="joint1" targetPort="a"/>
+    <connection source="joint1" sourcePort="o" target="joint2" targetPort="a"/>
+    <connection source="joint2" sourcePort="o" target="joint3" targetPort="a"/>
+    <connection source="joint3" sourcePort="o" target="not0" targetPort="a"/>
+  </circuit>
+  <circuit name="RS flip-flop">
+    <component type="in" name="R" posx="50" posy="0"/>
+    <component type="or" name="or0" posx="100" posy="25"/>
+    <component type="not" name="not0" posx="150" posy="25"/>
+    <component type="id" name="joint0" posx="200" posy="25"/>
+    <component type="id" name="joint1" posx="200" posy="100"/>
+    <component type="other" type2="delay" name="delay0" posx="250" posy="100"/>
+    <component type="or" name="or1" posx="300" posy="125"/>
+    <component type="not" name="not1" posx="350" posy="125"/>
+    <component type="id" name="joint2" posx="400" posy="125"/>
+    <component type="other" type2="delay" name="delay1" posx="50" posy="50"/>
+    <component type="in" name="S" posx="50" posy="150"/>
+    <component type="id" name="joint3" posx="400" posy="75"/>
+    <component type="id" name="joint4" posx="0" posy="75"/>
+    <component type="id" name="joint5" posx="0" posy="50"/>
+    <component type="out" name="Q" posx="450" posy="25"/>
+    <component type="out" name="nQ" posx="450" posy="125"/>
+    
+    <connection source="R" sourcePort="o" target="or0" targetPort="a"/>
+    <connection source="or0" sourcePort="o" target="not0" targetPort="a"/>
+    <connection source="not0" sourcePort="o" target="joint0" targetPort="a"/>
+    <connection source="joint0" sourcePort="o" target="joint1" targetPort="a"/>
+    <connection source="joint1" sourcePort="o" target="delay0" targetPort="a"/>
+    <connection source="delay0" sourcePort="o" target="or1" targetPort="a"/>
+    <connection source="or1" sourcePort="o" target="not1" targetPort="a"/>
+    <connection source="not1" sourcePort="o" target="joint2" targetPort="a"/>
+    <connection source="joint2" sourcePort="o" target="joint3" targetPort="a"/>
+    <connection source="joint3" sourcePort="o" target="joint4" targetPort="a"/>
+    <connection source="joint4" sourcePort="o" target="joint5" targetPort="a"/>
+    <connection source="joint5" sourcePort="o" target="delay1" targetPort="a"/>
+    <connection source="delay1" sourcePort="o" target="or0" targetPort="b"/>
+    <connection source="S" sourcePort="o" target="or1" targetPort="b"/>
+    <connection source="joint0" sourcePort="o" target="Q" targetPort="a"/>
+    <connection source="joint2" sourcePort="o" target="nQ" targetPort="a"/>
+  </circuit>
+  <circuit name="D latch">
+    <component type="in" name="D" posx="0" posy="0"/>
+    <component type="id" name="joint0" posx="50" posy="0"/>
+    <component type="not" name="not0" posx="100" posy="0"/>
+    <component type="and" name="and0" posx="200" posy="25"/>
+    <component type="in" name="E" posx="100" posy="50"/>
+    <component type="id" name="joint1" posx="150" posy="50"/>
+    <component type="id" name="joint2" posx="150" posy="100"/>
+    <component type="id" name="joint3" posx="50" posy="150"/>
+    <component type="and" name="and1" posx="200" posy="125"/>
+    <component type="id" name="joint4" posx="250" posy="125"/>
+    <component type="id" name="joint5" posx="250" posy="75"/>
+    <component type="circuit" type2="RS flip-flop" name="flipflop0" posx="325" posy="50"/>
+    <component type="out" name="Q" posx="400" posy="25"/>
+    <component type="out" name="nQ" posx="400" posy="75"/>
+    
+    <connection source="D" sourcePort="o" target="joint0" targetPort="a"/>
+    <connection source="joint0" sourcePort="o" target="not0" targetPort="a"/>
+    <connection source="not0" sourcePort="o" target="and0" targetPort="a"/>
+    <connection source="E" sourcePort="o" target="joint1" targetPort="a"/>
+    <connection source="joint1" sourcePort="o" target="and0" targetPort="b"/>
+    <connection source="joint1" sourcePort="o" target="joint2" targetPort="a"/>
+    <connection source="joint2" sourcePort="o" target="and1" targetPort="a"/>
+    <connection source="joint0" sourcePort="o" target="joint3" targetPort="a"/>
+    <connection source="joint3" sourcePort="o" target="and1" targetPort="b"/>
+    <connection source="and0" sourcePort="o" target="flipflop0" targetPort="R"/>
+    <connection source="and1" sourcePort="o" target="joint4" targetPort="a"/>
+    <connection source="joint4" sourcePort="o" target="joint5" targetPort="a"/>
+    <connection source="joint5" sourcePort="o" target="flipflop0" targetPort="S"/>
+    <connection source="flipflop0" sourcePort="Q" target="Q" targetPort="a"/>
+    <connection source="flipflop0" sourcePort="nQ" target="nQ" targetPort="a"/>
+  </circuit>
+  <circuit name="main">
+    <component type="in" name="switch" posx="50" posy="0"/>
+    <component type="circuit" type2="D latch" name="dlatch0" posx="175" posy="25"/>
+    <component type="circuit" type2="D latch" name="dlatch1" posx="325" posy="25"/>
+    <component type="circuit" type2="clock" name="clock" posx="25" posy="50"/>
+    <component type="not" name="not0" posx="150" posy="100"/>
+    <component type="id" name="joint0" posx="100" posy="50"/>
+    <component type="id" name="joint1" posx="100" posy="100"/>
+    <component type="id" name="joint2" posx="250" posy="100"/>
+    <component type="id" name="joint3" posx="250" posy="50"/>
+    <component type="out" name="lamp" posx="400" posy="0"/>
+    
+    <connection source="switch" sourcePort="o" target="dlatch0" targetPort="D"/>
+    <connection source="clock" sourcePort="clk" target="joint0" targetPort="a"/>
+    <connection source="joint0" sourcePort="o" target="dlatch0" targetPort="E"/>
+    <connection source="joint0" sourcePort="o" target="joint1" targetPort="a"/>
+    <connection source="joint1" sourcePort="o" target="not0" targetPort="a"/>
+    <connection source="not0" sourcePort="o" target="joint2" targetPort="a"/>
+    <connection source="joint2" sourcePort="o" target="joint3" targetPort="a"/>
+    <connection source="joint3" sourcePort="o" target="dlatch1" targetPort="E"/>
+    <connection source="dlatch0" sourcePort="Q" target="dlatch1" targetPort="D"/>
+    <connection source="dlatch1" sourcePort="Q" target="lamp" targetPort="a"/>
+  </circuit>
+</circuits>
