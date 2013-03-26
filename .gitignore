@@ -13,6 +13,7 @@ funCKit.iws
 ## ignore editor backup files
 *.backup
 *~
+*.swp
 
 workspace/funCKit/doc
 workspace/funCKit/doxydoc
